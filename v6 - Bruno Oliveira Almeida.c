@@ -124,7 +124,11 @@ int main(){
 
             case 2:{
                 system("clear");
-                visualizaPontos(registro);
+                if(verificaPilha(pilha) == 0){
+                    printf("Sem coordenadas\n");
+                } else {
+                    visualizaPontos(registro);
+                }
             }
             break;
 
@@ -141,7 +145,11 @@ int main(){
 
             case 4:{
                 system("clear");
-                desempilhar(&pilha);
+                if(verificaPilha(pilha) == 0){
+                    printf("Sem coordenadas\n");
+                } else {
+                    desempilhar(&pilha);
+                }
             }
             break;
 
